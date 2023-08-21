@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Jeu de Memory</title>
+</head>
+<body>
+    <div class="container">
+        <div class="stats">
+            <div class="time">
+                <h2>Timer</h2>
+                <div class="timer">
+                    <p>0:00</p>
+                </div>
+            </div>
+            <div class="try">
+                <h2>Tentatives</h2>
+                <p>0</p>
+            </div>
+            <div class="restart">
+                <button>Recommencer</button>
+            </div>
+        </div>
+        <div class="game">
+            <div class="box">
+                <div class="card" delta-num="1">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-dog"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="1">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-dog"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="2">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-cat"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="2">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-cat"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="3">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-fish"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="3">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-fish"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="4">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-frog"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="4">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-frog"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="5">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-crow"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="5">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-crow"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="6">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-horse"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="6">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-horse"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="7">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-dragon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="7">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-dragon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="8">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="8">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="9">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-mosquito"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="9">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-mosquito"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="10">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-spider"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="card" delta-num="10">
+                    <div class="recto">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <div class="verso">
+                        <i class="fa-solid fa-spider"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
