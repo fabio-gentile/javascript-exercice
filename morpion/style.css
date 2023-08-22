@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    --s: 84px; /* control the size*/
+    --c1: #f2f2f2;
+    --c2: #cdcbcc;
+    --c3: #999999;
+
+    --_g: 0 120deg,#0000 0;
+    background:
+            conic-gradient(from    0deg at calc(500%/6) calc(100%/3),var(--c3) var(--_g)),
+            conic-gradient(from -120deg at calc(100%/6) calc(100%/3),var(--c2) var(--_g)),
+            conic-gradient(from  120deg at calc(100%/3) calc(500%/6),var(--c1) var(--_g)),
+            conic-gradient(from  120deg at calc(200%/3) calc(500%/6),var(--c1) var(--_g)),
+            conic-gradient(from -180deg at calc(100%/3) 50%,var(--c2)  60deg,var(--c1) var(--_g)),
+            conic-gradient(from   60deg at calc(200%/3) 50%,var(--c1)  60deg,var(--c3) var(--_g)),
+            conic-gradient(from  -60deg at 50% calc(100%/3),var(--c1) 120deg,var(--c2) 0 240deg,var(--c3) 0);
+    background-size: calc(var(--s)*1.732) var(--s);
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.game {*/
+/*    background-color: white;*/
+/*    border: 2px solid black;*/
+/*    width: 600px;*/
+/*    height: 600px;*/
+/*}*/
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 7px solid black;
+    margin: 0 auto;
+    width: 700px;
+}
+
+.box {
+    aspect-ratio: 1/1;
+    background: #4e4f51;
+    color: white;
+    cursor: pointer;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.stats {
+    width: 40%;
+}
+
+/*#turn {*/
+/*    font-size: 2rem;*/
+/*    width: fit-content;*/
+/*    text-align: center;*/
+/*    background: white;*/
+/*}*/
+
+.player {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    color: white;
+    align-items: center;
+}
+
+.player h4 {
+    margin-bottom: 2rem;
+}
+
+.text {
+    background: #4e4f51;
+    padding: 2rem 5rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.text.actual-turn {
+    border: 6px solid green;
+}
