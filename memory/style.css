@@ -1,26 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html, body {
-    --s: 222px; /* control the size */
-    --c1: #7f727b;
-    --c2: #d6b4c2;
-    --c3: #baa0ab;
-
-    --_g: var(--c1) 10%,var(--c2) 10.5% 19%,#0000 19.5% 80.5%,var(--c2) 81% 89.5%,var(--c3) 90%;
-    --_c: from -90deg at 37.5% 50%,#0000 75%;
-    --_l1: linear-gradient(145deg,var(--_g));
-    --_l2: linear-gradient( 35deg,var(--_g));
-    background:
-            var(--_l1), var(--_l1) calc(var(--s)/2) var(--s),
-            var(--_l2), var(--_l2) calc(var(--s)/2) var(--s),
-            conic-gradient(var(--_c),var(--c1) 0) calc(var(--s)/8) 0,
-            conic-gradient(var(--_c),var(--c3) 0) calc(var(--s)/2) 0,
-            linear-gradient(90deg,var(--c3) 38%,var(--c1) 0 50%,var(--c3) 0 62%,var(--c1) 0);
-    background-size: var(--s) calc(2*var(--s)/3);
+    font-family: 'Inter', sans-serif;
 }
 
 html, body{
@@ -29,6 +13,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(43deg, rgba(39,145,182,1) 0%, rgba(5,47,161,1) 100%);
 }
 
 .container{
@@ -72,11 +57,11 @@ html, body{
     backface-visibility: hidden;
     position: absolute;
     border-radius: 5px;
-    outline: 3px solid lightpink;
+    outline: 3px solid black;
 }
 
 .recto{
-    background: lightpink;
+    background: darkgrey;
 }
 
 .verso{
@@ -120,6 +105,7 @@ html, body{
     margin-bottom: 3rem;
     background: white;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .stats h2{
@@ -131,15 +117,4 @@ html, body{
     outline: none;
     background: none;
     pointer-events: none;
-}
-
-.restart:hover{
-    cursor: pointer;
-    background: lightpink;
-    transition: all .2s;
-
-}
-
-.restart:hover button{
-    color: white;
 }

@@ -1,24 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-}
-
-html {
-    --s: 84px; /* control the size*/
-    --c1: #f2f2f2;
-    --c2: #cdcbcc;
-    --c3: #999999;
-
-    --_g: 0 120deg,#0000 0;
-    background:
-            conic-gradient(from    0deg at calc(500%/6) calc(100%/3),var(--c3) var(--_g)),
-            conic-gradient(from -120deg at calc(100%/6) calc(100%/3),var(--c2) var(--_g)),
-            conic-gradient(from  120deg at calc(100%/3) calc(500%/6),var(--c1) var(--_g)),
-            conic-gradient(from  120deg at calc(200%/3) calc(500%/6),var(--c1) var(--_g)),
-            conic-gradient(from -180deg at calc(100%/3) 50%,var(--c2)  60deg,var(--c1) var(--_g)),
-            conic-gradient(from   60deg at calc(200%/3) 50%,var(--c1)  60deg,var(--c3) var(--_g)),
-            conic-gradient(from  -60deg at 50% calc(100%/3),var(--c1) 120deg,var(--c2) 0 240deg,var(--c3) 0);
-    background-size: calc(var(--s)*1.732) var(--s);
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -27,6 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(43deg, rgba(39,145,182,1) 0%, rgba(5,47,161,1) 100%);
 }
 
 /*.game {*/
@@ -46,8 +32,7 @@ body {
 
 .box {
     aspect-ratio: 1/1;
-    background: #4e4f51;
-    color: white;
+    background: #fff;
     cursor: pointer;
     font-size: 4rem;
     display: flex;
@@ -73,7 +58,6 @@ body {
     justify-content: center;
     flex-direction: column;
     font-size: 2rem;
-    color: white;
     align-items: center;
 }
 
@@ -82,7 +66,7 @@ body {
 }
 
 .text {
-    background: #4e4f51;
+    background: #fff;
     padding: 2rem 5rem;
     text-align: center;
     border-radius: 5px;
