@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire de commande</title>
+</head>
+<body>
+<div class="container">
+    <h1>Formulaire de commande</h1>
+    <div class="form-add">
+        <label for="item">Ajouter au panier :</label>
+        <div>
+            <select name="item" id="item">
+                <option value="0" selected>L'Étranger - Albert Camus</option>
+                <option value="1">1984 - George Orwell</option>
+                <option value="2">Le Père Goriot - Honoré de Balzac</option>
+                <option value="3">Les Fleurs du mal - Charles Baudelaire</option>
+                <option value="4">Le Comte de Monte-Cristo - Alexandre Dumas</option>
+            </select>
+            <input type="submit" value="Ajouter" class="submit">
+        </div>
+    </div>
+    <form action="treatment.php" method="POST" class="shopping-list">
+        <div class="submit-order">
+            <input type="submit" value="Commander">
+        </div>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
