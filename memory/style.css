@@ -1,120 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-html, body{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(43deg, rgba(39,145,182,1) 0%, rgba(5,47,161,1) 100%);
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(43deg, rgba(39, 145, 182, 1) 0%, rgba(5, 47, 161, 1) 100%);
 }
 
-.container{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80%;
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
 }
 
-.game{
-    width: 70%;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-row-gap: 2rem;
-    place-items: center;
+.game {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row-gap: 2rem;
+  place-items: center;
 }
 
-.box{
-    width: 90px;
-    height: 180px;
-    cursor: pointer;
+.box {
+  width: 90px;
+  height: 180px;
+  cursor: pointer;
 }
 
-.card{
-    height: 100%;
-    position: relative;
-    transform: perspective(600px);
-    transform-style: preserve-3d;
-    background: white;
-    transition: all .3s linear;
+.card {
+  height: 100%;
+  position: relative;
+  transform: perspective(600px);
+  transform-style: preserve-3d;
+  background: white;
+  transition: all 0.3s linear;
 }
 
-.recto, .verso{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-    position: absolute;
-    border-radius: 5px;
-    outline: 3px solid black;
+.recto,
+.verso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 5px;
+  outline: 3px solid black;
 }
 
-.recto{
-    background: darkgrey;
+.recto {
+  background: darkgrey;
 }
 
-.verso{
-    background: white;
+.verso {
+  background: white;
 }
-.card i{
-    font-size: 3rem;
-}
-
-.show{
-    transform: perspective(600px) rotateY(180deg);
-    background: white;
+.card i {
+  font-size: 3rem;
 }
 
-.verso{
-    transform: rotateY(-180deg);
-    display: none;
+.show {
+  transform: perspective(600px) rotateY(180deg);
+  background: white;
 }
 
-.show .verso{
-    display: flex;
+.verso {
+  transform: rotateY(-180deg);
+  display: none;
 }
 
-.stats{
-    display: flex;
-    flex-direction: column;
-    /*justify-content: space-between;*/
-    align-items: center;
-    align-self: center;
-    text-align: center;
-    width: 30%;
+.show .verso {
+  display: flex;
 }
 
-.time, .try, .restart{
-    padding: 1rem 0;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex-direction: column;
-    margin-bottom: 3rem;
-    background: white;
-    border-radius: 5px;
-    cursor: pointer;
+.stats {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  width: 30%;
 }
 
-.stats h2{
-    font-size: 2rem;
+.time,
+.try,
+.restart {
+  padding: 1rem 0;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.restart button{
-    border: none;
-    outline: none;
-    background: none;
-    pointer-events: none;
+.stats h2 {
+  font-size: 2rem;
+}
+
+.restart button {
+  border: none;
+  outline: none;
+  background: none;
+  pointer-events: none;
 }

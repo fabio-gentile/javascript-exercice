@@ -1,172 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-    background: linear-gradient(43deg, rgba(39,145,182,1) 0%, rgba(5,47,161,1) 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: linear-gradient(43deg, rgba(39, 145, 182, 1) 0%, rgba(5, 47, 161, 1) 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-    background-color: #f2f2f2;
-    padding: 2rem;
-    width: fit-content;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  width: fit-content;
 }
 
 .container h1 {
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.form-euromillion .number, .form-euromillion .star {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-gap: .5rem;
-    width: auto;
+.form-euromillion .number,
+.form-euromillion .star {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 0.5rem;
+  width: auto;
 }
 
 .form-euromillion .number .cell {
-    cursor: pointer;
-    border: 1px solid rgba(5, 100, 255, 1);
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  cursor: pointer;
+  border: 1px solid rgba(5, 100, 255, 1);
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-euromillion .number .cell.active {
-    background: rgba(5, 100, 255, 1);
-    border: 1px solid rgba(5, 100, 255, 1);
-    color: white;
+  background: rgba(5, 100, 255, 1);
+  border: 1px solid rgba(5, 100, 255, 1);
+  color: white;
 }
 
 .form-euromillion .star {
-    margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .form-euromillion .star .cell {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .form-euromillion .star .cell svg {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .form-euromillion .star .cell.active svg {
-    fill: gold;
+  fill: gold;
 }
 
 .form-euromillion .star .cell p {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .form-euromillion .star .cell polygon {
-    stroke-width: 1px;
-    stroke: rgba(5, 100, 255, 1);
+  stroke-width: 1px;
+  stroke: rgba(5, 100, 255, 1);
 }
 
 .form-euromillion .star .cell.active polygon {
-    stroke: gold;
+  stroke: gold;
 }
 
-.form-euromillion input[type=submit] {
-    width: 100%;
-    padding: .6rem 1.2rem;
-    outline: none;
-    font-size: 1.2rem;
-    background: rgba(5, 100, 255, 1);
-    border: none;
-    color: #f2f2f2;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 1.5rem;
+.form-euromillion input[type='submit'] {
+  width: 100%;
+  padding: 0.6rem 1.2rem;
+  outline: none;
+  font-size: 1.2rem;
+  background: rgba(5, 100, 255, 1);
+  border: none;
+  color: #f2f2f2;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
 }
 
 .flex {
-    display: flex;
-    width: 100%;
-    gap: 2rem;
-    margin-top: 2rem;
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .stats {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .stats .info {
-    display: flex;
-    gap: .8rem;
-    flex-direction: column;
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
 }
 
 .stats .info p:nth-child(1) {
-    font-size: 1.2rem;
-    font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .stats .user-bet-value {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    min-width: 300px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 300px;
+  align-items: center;
 }
 
 .stats .user-bet-value .bet-multiplier {
-    display: flex;
-    gap: .8rem;
-    color: darkgray;
-    cursor: pointer;
+  display: flex;
+  gap: 0.8rem;
+  color: darkgray;
+  cursor: pointer;
 }
 
 .stats .user-bet-value .bet-multiplier .active {
-    color: black;
+  color: black;
 }
 
 .stats .bet {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
-.stats .user-bet p, .stats .computer-bet p {
-    font-size: 1.1rem;
-    margin: 1rem 0;
+.stats .user-bet p,
+.stats .computer-bet p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
 }
 
 .stats .balance {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .stats .balance .balance-reset {
-    width: fit-content;
-    padding: .3rem .6rem;
-    outline: none;
-    font-size: 1rem;
-    background: none;
-    border: 1px solid rgba(5, 100, 255, 1);
-    border-radius: 3px;
-    cursor: pointer;
+  width: fit-content;
+  padding: 0.3rem 0.6rem;
+  outline: none;
+  font-size: 1rem;
+  background: none;
+  border: 1px solid rgba(5, 100, 255, 1);
+  border-radius: 3px;
+  cursor: pointer;
 }

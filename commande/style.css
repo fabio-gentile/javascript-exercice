@@ -1,115 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-    background: linear-gradient(43deg, rgba(39,145,182,1) 0%, rgba(5,47,161,1) 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  background: linear-gradient(43deg, rgba(39, 145, 182, 1) 0%, rgba(5, 47, 161, 1) 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .container {
-    background-color: #f2f2f2;
-    padding: 2rem;
+  background-color: #f2f2f2;
+  padding: 2rem;
 }
 
 .container h1 {
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .form-add {
-    margin: 2rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
 }
 
 .form-add label {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .form-add select {
-    padding: .5rem;
-    font-size: 1rem;
-    border: 1px solid black;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid black;
 }
 
 .form-add option {
-    font-size: 1rem;
-    height: 100px;
+  font-size: 1rem;
+  height: 100px;
 }
 
-.form-add .submit, .shopping-list .submit-order input {
-    width: fit-content;
-    padding: .6rem 1.2rem;
-    outline: none;
-    font-size: 1rem;
-    background: rgba(5, 100, 255, 1);
-    border: none;
-    color: #f2f2f2;
-    cursor: pointer;
-    font-weight: bold;
-    margin-left: .5rem;
+.form-add .submit,
+.shopping-list .submit-order input {
+  width: fit-content;
+  padding: 0.6rem 1.2rem;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(5, 100, 255, 1);
+  border: none;
+  color: #f2f2f2;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 0.5rem;
 }
 
 .shopping-list {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .shopping-list .form-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .shopping-list .form-group .quantity .input-quantity {
-    padding: 1rem;
-    border: 1px solid black;
-    width: 4rem;
+  padding: 1rem;
+  border: 1px solid black;
+  width: 4rem;
 }
 
-.shopping-list .form-group input[type=text] {
-    padding: .5rem;
-    font-size: 1rem;
-    border: 1px solid black;
-    width: 65%;
+.shopping-list .form-group input[type='text'] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid black;
+  width: 65%;
 }
 
 .shopping-list .submit-order {
-    text-align: center;
-    margin-top: 2rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .shopping-list .submit-order input {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .shopping-list .form-group .quantity {
-    display: flex;
-    align-items: center;
-    gap: .25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .shopping-list .form-group .quantity svg {
-    cursor: pointer;
-    width: 1.5rem;
-    height: 1.5rem;
-    aspect-ratio: 1/1;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  aspect-ratio: 1/1;
 }
 
 .shopping-list .form-group .quantity svg:hover {
-    fill: rgba(5, 100, 255, 1);
+  fill: rgba(5, 100, 255, 1);
 }
 
 .shopping-list .form-group .quantity svg path {
-    pointer-events: none;
+  pointer-events: none;
 }

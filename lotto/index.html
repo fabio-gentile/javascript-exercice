@@ -1,65 +1,60 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Lotto Euromillion</title>
-</head>
-<body>
-<div class="container">
-    <h1>Lotto Euromillion</h1>
-    <div class="flex">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lotto Euromillion</h1>
+      <div class="flex">
         <form action="#" method="POST" class="form-euromillion">
-            <div class="number">
-
-            </div>
-            <div class="star">
-
-            </div>
-            <input type="submit" value="Jouer" id="form-submit">
+          <div class="number"></div>
+          <div class="star"></div>
+          <input type="submit" value="Jouer" id="form-submit" />
         </form>
         <div class="stats">
-            <div class="info">
-                <p>Sélectionnez 5 numéros et 2 étoiles.</p>
-                <p class="player">Nombre de participants : <span id="total-player"></span></p>
-                <p class="pool">Cagnotte totale : <span id="total-pool"></span>€</p>
+          <div class="info">
+            <p>Sélectionnez 5 numéros et 2 étoiles.</p>
+            <p class="player">
+              Nombre de participants :
+              <span id="total-player"></span>
+            </p>
+            <p class="pool">Cagnotte totale : <span id="total-pool"></span>€</p>
+          </div>
+          <div class="user-bet-value">
+            <p>Mise actuelle : <span class="bet-value">2.5€</span></p>
+            <div class="bet-multiplier">
+              <div class="one multiplier" data-multiplier="1">1x</div>
+              <div class="two multiplier" data-multiplier="2">2x</div>
+              <div class="three multiplier" data-multiplier="3">3x</div>
             </div>
-            <div class="user-bet-value">
-                <p>Mise actuelle : <span class="bet-value">2.5€</span></p>
-                <div class="bet-multiplier">
-                    <div class="one multiplier" data-multiplier="1">1x</div>
-                    <div class="two multiplier" data-multiplier="2">2x</div>
-                    <div class="three multiplier" data-multiplier="3">3x</div>
-                </div>
+          </div>
+          <div class="balance">
+            <div>Balance : <span class="balance-value"></span>€</div>
+            <button class="balance-reset">+ 100€</button>
+          </div>
+          <div class="last-win" style="display: none">Dernier gain : <span class="last-win-value">5</span>€</div>
+          <div class="bet">
+            <div class="user-bet">
+              <p>Votre dernière grille</p>
+              <span id="user-bet"></span>
             </div>
-            <div class="balance">
-                <div>
-                    Balance : <span class="balance-value"></span>€
-                </div>
-                <button class="balance-reset">+ 100€</button>
+            <div class="computer-bet">
+              <p>Dernière grille gagnante</p>
+              <span id="computer-bet"></span>
             </div>
-            <div class="last-win" style="display: none">
-                Dernier gain : <span class="last-win-value">5</span>€
-            </div>
-            <div class="bet">
-                <div class="user-bet">
-                    <p>Votre dernière grille</p>
-                    <span id="user-bet"></span>
-                </div>
-                <div class="computer-bet">
-                    <p>Dernière grille gagnante</p>
-                    <span id="computer-bet"></span>
-                </div>
-            </div>
-            <div class="bet">
-
-            </div>
+          </div>
+          <div class="bet"></div>
         </div>
+      </div>
     </div>
-</div>
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
